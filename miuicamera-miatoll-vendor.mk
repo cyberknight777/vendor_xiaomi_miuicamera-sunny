@@ -3,7 +3,7 @@
 #
 
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/xiaomi/miuicamera-toco
+    vendor/xiaomi/miuicamera-miatoll
 
 PRODUCT_PACKAGES += \
     libcamera_algoup_jni.xiaomi \
@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
     libmibokeh_gallery \
     librefocus \
     librefocus_mibokeh \
-    libSNPE \
     MiuiCamera \
     MiuiExtraPhoto
 

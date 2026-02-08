@@ -4,9 +4,9 @@
 
 soong_namespace {
     imports: [
-        "device/xiaomi/miuicamera-toco",
-        "vendor/xiaomi/sm6150-common",
-        "vendor/xiaomi/toco",
+        "device/xiaomi/miuicamera-miatoll",
+        "vendor/xiaomi/sm6250-common",
+        "vendor/xiaomi/miatoll",
     ],
 }
 
@@ -327,31 +327,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libSNPE",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libSNPE.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "liblog",
-                "libc++_shared",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
 }
 
 android_app_import {
