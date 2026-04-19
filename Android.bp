@@ -4,8 +4,8 @@
 
 soong_namespace {
     imports: [
-        "device/xiaomi/miuicamera-miatoll",
-        "vendor/xiaomi/miatoll",
+        "device/xiaomi/miuicamera-sunny",
+        "vendor/xiaomi/sunny",
     ],
 }
 
